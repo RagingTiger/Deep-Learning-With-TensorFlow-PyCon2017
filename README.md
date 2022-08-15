@@ -17,7 +17,7 @@ docker run -d \
            -e JUPYTER_ENABLE_LAB=yes \
            -p 8888:8888 \
            -v $PWD/notebooks:/home/jovyan \
-           jupyter/scipy-notebook:lab-3.4.4 && \
+           jupyter/tensorflow-notebook:lab-3.4.5 && \
 sleep 5 && \
 docker logs gidltf 2>&1 | grep "http://127.0.0.1" | tail -n 1 | awk '{print $2}'
 ```
